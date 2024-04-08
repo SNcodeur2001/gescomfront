@@ -1,0 +1,87 @@
+<div class="container mx-auto p-4">
+  <!-- Barre de recherche -->
+  <div class="mb-4 flex flex-col md:flex-row justify-between items-center mt-7">
+    <div class="mb-2 md:mb-0">
+      <button routerLink="/formulaire-article" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+        <i class="fas fa-plus mr-1"></i>
+        Ajouter
+      </button>
+    </div>
+    <div class="relative">
+      <input type="text" placeholder="Rechercher..." class="border border-gray-300 rounded-md p-2 w-full md:w-72">
+      <i class="absolute right-3 top-3 fas fa-search text-gray-400"></i>
+    </div>
+  </div>
+
+  <h2 class="text-2xl font-bold mb-4 text-center mt-12 underline">Liste des familles</h2>
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-800">
+      <tr>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+          Numéro
+        </th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+          Références
+        </th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+          Désignation
+        </th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+          Famille
+        </th>
+        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">
+          Actions
+        </th>
+      </tr>
+    </thead>
+    <tbody class="bg-white divide-y divide-gray-200">
+      <!-- Article 1 -->
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">1</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">REF001</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">Article 1</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">Famille 1</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <button class="text-blue-500 hover:text-blue-700 mr-6">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
+          <button class="text-red-500 hover:text-red-700">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+      <!-- Article 2 -->
+      <tr>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">2</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">REF002</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">Article 2</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <div class="text-sm text-gray-900">Famille 2</div>
+        </td>
+        <td class="px-6 py-4 whitespace-nowrap">
+          <button class="text-blue-500 hover:text-blue-700 mr-6">
+            <i class="fas fa-pencil-alt"></i>
+
+            </button>
+          <button class="text-red-500 hover:text-red-700">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </td>
+      </tr>
+      <!-- Ajoutez d'autres lignes pour plus d'articles -->
+    </tbody>
+  </table>

@@ -1,0 +1,15 @@
+<nav class="fixed top-0 left-0 w-full flex h-12 justify-between items-center rounded-md bg-gray-800 z-50">
+  <div class="ml-4">
+    <a href="#" class=""><h1 class="text-white text-2xl">Mon site</h1></a>
+  </div>
+  <ul class="flex">
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('home')"><a routerLink="/home">Home</a></li>
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('produits')"><a routerLink="/produits">Produits</a></li>
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('depot')"><a routerLink="/depot">Dépôts</a></li>
+    <li class="mr-6 text-white cursor-pointer hover:underline" (click)="onMenuClick('contact')"><a routerLink="/contact">Collaborateurs</a></li>
+  </ul>
+  <div class="mr-4">
+    <i class="far fa-user text-white"></i>
+  </div>
+</nav>
+

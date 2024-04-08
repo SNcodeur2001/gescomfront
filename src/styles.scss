@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.custom-contact-link {
+  @apply block px-4 py-2 text-white;
+}
+
+.custom-contact-link:hover {
+  @apply hover:bg-white hover:text-green-500;
+}
+
+
+.option-menu{
+  @apply  text-white mt-2;
+}
+
+/* Style hover */
+.option-menu:hover, .selected {
+  @apply hover:bg-white hover:text-green-500 cursor-pointer font-bold;
+}
+
+

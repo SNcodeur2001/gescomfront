@@ -1,0 +1,7 @@
+main {
+  margin-top: 48px; /* Marge supérieure pour tenir compte de la barre de navigation en haut et de l'espacement */
+  margin-left: 160px; /* Ajustez la marge gauche pour tenir compte de la barre de navigation à gauche */
+  height: calc(100vh - 48px); /* Hauteur restante en soustrayant la hauteur de la barre de navigation en haut et de l'espacement */
+  overflow-y: auto; /* Ajoutez un défilement vertical si nécessaire */
+  background-color: rgb(240 253 244);
+}
