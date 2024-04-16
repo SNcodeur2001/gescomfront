@@ -3,6 +3,9 @@ import { RouterOutlet } from '@angular/router';
 import { MainLayoutComponentComponent } from "./main-layout-component/main-layout-component.component";
 import { ProduitsComponent } from './components/produits/produits.component';
 import { PageService } from './services/page.service';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -10,7 +13,9 @@ import { PageService } from './services/page.service';
     styleUrl: './app.component.scss',
     imports: [RouterOutlet,
              MainLayoutComponentComponent,
-             ProduitsComponent
+             ProduitsComponent,
+             HttpClientModule,
+             CommonModule
             ]
 })
 export class AppComponent {

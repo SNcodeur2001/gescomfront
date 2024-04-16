@@ -2,7 +2,7 @@
   <!-- Barre de recherche -->
   <div class="mb-4 flex flex-col md:flex-row justify-between items-center mt-7">
     <div class="mb-2 md:mb-0">
-      <button routerLink="/ajout-clients" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      <button routerLink="/ajouter-fournisseurs" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
         <i class="fas fa-plus mr-1"></i>
         Ajouter
       </button>
@@ -92,10 +92,13 @@
             <div class="text-sm text-gray-900">{{ fournisseur.ninea }}</div>
           </td>
           <td class="px-6 py-4 whitespace-nowrap">
-            <button class="text-blue-500 hover:text-blue-700 mr-2">
+
+
+
+            <button class="text-blue-500 hover:text-blue-700 mr-7" (click)="goToEdit(fournisseur.id)">
               <i class="fas fa-pencil-alt"></i>
             </button>
-            <button class="text-red-500 hover:text-red-700">
+            <button class="text-red-500 hover:text-red-700" (click)="deleteFournisseur(fournisseur.id)">
               <i class="fas fa-trash-alt"></i>
             </button>
           </td>

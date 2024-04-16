@@ -7,11 +7,14 @@ import { FamillesComponent } from './components/familles/familles.component';
 import { ArticlesComponent } from './components/articles/articles.component';
 import { FormulaireFamilleComponent } from './components/formulaires/formulaire-famille/formulaire-famille.component';
 import { FormulaireArticleComponent } from './components/formulaires/formulaire-article/formulaire-article.component';
-import { ClientsComponent } from './components/clients/clients.component';
 import { FournisseursComponent } from './components/fournisseurs/fournisseurs.component';
 import { AjoutClientComponent } from './components/ajout-client/ajout-client.component';
-import { AjoutFournisseurComponent } from './components/ajout-fournisseur/ajout-fournisseur.component';
 import { DepotSidebarComponent } from './main-layout-component/sidebar-component/depot-sidebar/depot-sidebar.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { AjouterFournisseurComponent } from './components/ajouter-fournisseur/ajouter-fournisseur.component';
+import { EditFournisseurComponent } from './components/edit-fournisseur/edit-fournisseur.component';
+import { TestComponent } from './components/test/test.component';
+import { EditClientComponent } from './components/edit-client/edit-client.component';
 
 export const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -24,8 +27,11 @@ export const routes: Routes = [
   {path:'articles', component:ArticlesComponent},
   {path:'formulaire-famille', component:FormulaireFamilleComponent},
   {path:'formulaire-article',component:FormulaireArticleComponent},
-  {path: 'clients', component:ClientsComponent},
+  {path:'clients',component:ClientsComponent},
+  {path:'ajout-clients', component:AjoutClientComponent},
   {path:'fournisseurs', component:FournisseursComponent},
-  {path:'ajout-fournisseurs', component:AjoutFournisseurComponent},
-  {path:'ajout-clients', component:AjoutClientComponent}
+  {path:'ajouter-fournisseurs', component:AjouterFournisseurComponent},
+  {path:'edit-fournisseurs/:id', component:EditFournisseurComponent},
+  {path:'edit-client/:id', component:EditClientComponent}
+
 ];

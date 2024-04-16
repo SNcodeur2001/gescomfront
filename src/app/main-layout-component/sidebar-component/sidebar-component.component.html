@@ -36,9 +36,9 @@
   </ul>
   <ul *ngIf="selectedMenu === 'contact'">
     <!-- Options spécifiques au menu "Contact" -->
-    <li [ngClass]="{'selected': currentRoute === '/clients'}" routerLink="/clients" class="option-menu">Clients</li>
-    <li [ngClass]="{'selected': currentRoute === '/fournisseurs'}" routerLink="/fournisseurs" class="option-menu">Fournisseurs</li>
-    <li [ngClass]="{'selected': currentRoute === '/fournisseurs'}" routerLink="/fournisseurs" class="option-menu">Utilisateurs</li>
+    <li routerLink="/clients" class="option-menu">Clients</li>
+    <li routerLink="/fournisseurs" class="option-menu">Fournisseurs</li>
+    <!-- <li routerLink="/ajout-clients" class="option-menu">Utilisateurs</li> -->
   </ul>
 
   </aside>
