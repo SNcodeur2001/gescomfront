@@ -15,6 +15,7 @@ import { AjouterFournisseurComponent } from './components/ajouter-fournisseur/aj
 import { EditFournisseurComponent } from './components/edit-fournisseur/edit-fournisseur.component';
 import { TestComponent } from './components/test/test.component';
 import { EditClientComponent } from './components/edit-client/edit-client.component';
+import { EditFamilleComponent } from './components/edit-famille/edit-famille.component';
 
 export const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
@@ -32,6 +33,8 @@ export const routes: Routes = [
   {path:'fournisseurs', component:FournisseursComponent},
   {path:'ajouter-fournisseurs', component:AjouterFournisseurComponent},
   {path:'edit-fournisseurs/:id', component:EditFournisseurComponent},
-  {path:'edit-client/:id', component:EditClientComponent}
+  {path:'edit-client/:id', component:EditClientComponent},
+  {path:'formulaire-famille', component:FormulaireFamilleComponent},
+  {path:'edit-famille/:id', component:EditFamilleComponent}
 
 ];
